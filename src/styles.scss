@@ -26,12 +26,11 @@ body {
 }
 
 .leaflet-popup-content {
-  min-width: 50rem !important;
+  /* min-width: 50rem !important; */
 }
 
 .leaflet-popup-content img {
   width: 100%;
-  border: 20px solid #ff6550;
 }
 
 .shadow {
