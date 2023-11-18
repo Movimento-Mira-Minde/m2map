@@ -4,10 +4,11 @@
        src="https://material.angular.io/assets/img/examples/shiba2.jpg">
   <mat-card-content>
     <span class="difficulty-1">Fácil</span>
-    <h1 class="item-title">Nome do Caminho</h1>
-    <span class="item-info">15 km - circular - 1h30</span>
+    <h1 class="item-title">{{trackInfo.title}}</h1>
+    <span class="item-info">{{trackInfo.properties.length}} - {{trackInfo.properties.type}}
+      - {{trackInfo.properties.duration}}</span>
   </mat-card-content>
   <mat-card-actions class="align-right">
-    <button class="link-green-button" mat-button routerLink="path-info">ver mais</button>
+    <button class="link-green-button" mat-button routerLink="path-info/{{trackInfo.id}}">ver mais</button>
   </mat-card-actions>
 </mat-card>

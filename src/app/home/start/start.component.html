@@ -22,10 +22,10 @@
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
 
     <div
-      *ngFor="let num of [1,2,3,4,5,6,7]"
+      *ngFor="let track of trackService.tracks"
       fxFlex="25%"
       fxFlex.sm="33%" fxFlex.xs="50%">
-      <app-start-item></app-start-item>
+      <app-start-item [track]="track"></app-start-item>
     </div>
   </div>
 </div>

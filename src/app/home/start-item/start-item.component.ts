@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TrackService }     from "../services/traks.service";
+import { TrackInfo }        from "../services/track-info.interface";
 
 @Component({
   selector: 'app-start-item',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./start-item.component.scss']
 })
 export class StartItemComponent {
+  @Input() track: any;
 
+  constructor(private tracService: TrackService) {
+  }
+
+  get trackInfo(): TrackInfo {
+    return this.tracService.trackInfo(this.track?.id);
+  }
 
 }

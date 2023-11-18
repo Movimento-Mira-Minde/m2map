@@ -14,6 +14,12 @@ function copyTraks() {
   copyFolderContents(sourceFolder, destinationFolder);
 }
 
+function copyContent() {
+  const sourceFolder = './gpx/content';
+  const destinationFolder = 'src/assets/content';
+  copyFolderContents(sourceFolder, destinationFolder);
+}
+
 function copyFolderContents(sourceFolder, destinationFolder) {
   fs.readdirSync(sourceFolder).forEach(file => {
     const sourceFile = path.join(sourceFolder, file);
@@ -55,4 +61,5 @@ function buildTracksInfo() {
 
 copyMarkers();
 copyTraks();
+copyContent();
 //buildTracksInfo();

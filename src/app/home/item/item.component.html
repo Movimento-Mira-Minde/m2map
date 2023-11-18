@@ -1,36 +1,37 @@
 <img alt="Photo of a Shiba Inu" mat-card-image
      src="https://material.angular.io/assets/img/examples/shiba2.jpg">
 <div class="screen-content">
-  <h1 class="item-title">Possível caminho com um nome muito grande</h1>
-  <span class="item-info">15 km - circular - 1h30</span>
+  <h1 class="item-title">{{trackInfo.title}}</h1>
+  <span class="item-info">{{trackInfo.properties.length}} - {{trackInfo.properties.type}}
+    - {{trackInfo.properties.duration}}</span>
 
   <mat-grid-list class="path-info" cols="4" rowHeight="1:1">
     <mat-grid-tile>
       <div class="item">
-        <img alt="Distância" src="assets/images/distance.png"/>
+        <img src="assets/images/distance.png"/>
         <br/>
-        <span class="label">5 km</span>
+        <span class="label">{{trackInfo.properties.length}}</span>
       </div>
     </mat-grid-tile>
     <mat-grid-tile>
       <div class="item">
-        <img alt="Distância" src="assets/images/clock.png"/>
+        <img src="assets/images/clock.png"/>
         <br/>
-        <span class="label">1h30</span>
+        <span class="label">{{trackInfo.properties.duration}}</span>
       </div>
     </mat-grid-tile>
     <mat-grid-tile>
       <div class="item">
-        <img alt="Distância" src="assets/images/circular.png"/>
+        <img src="assets/images/circular.png"/>
         <br/>
-        <span class="label">Circular</span>
+        <span class="label">{{trackInfo.properties.type}}</span>
       </div>
     </mat-grid-tile>
     <mat-grid-tile>
       <div class="item">
         <img alt="Distância" src="assets/images/walk.png"/>
         <br/>
-        <span class="label">fácil</span>
+        <span class="label">{{trackInfo.properties.dificulty}}</span>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
@@ -44,64 +45,43 @@
     </mat-icon>
   </button>
 
-  <div class="warning-message">
+  <div *ngIf="trackInfo.warning.length > 0" class="warning-message">
     <div class="icon">
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="warning"></mat-icon>
+      <mat-icon aria-hidden="false" fontIcon="warning"></mat-icon>
     </div>
 
     <div class="right-float">
       <span class="title">Aviso!</span>
-      <span>Por motivos de derrocada este caminho está parcialmente interdito</span>
+      <span>{{trackInfo.warning}}</span>
     </div>
   </div>
   <hr/>
-  Isto é um texto exemplo sobre o percurso que leva à cascata do poio.
-  Deve-se escrever primeiro informações sobre o caminho. Se o caminho tiver alguma história também se pode escrever aqui
-  e adicionalmente por último comentar sobre os pontos de interesse que se podem observar (por exemplo a cascata).
+  {{trackInfo.description}}
   <hr/>
 
   <span class="category-title">Caracteristicas</span>
   <mat-grid-list class="path-info" cols="4" rowHeight="60px">
-    <mat-grid-tile>
-      <img src="assets/images/binoculos.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Grande Vista</div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <img src="assets/images/rock-path.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Caminho Rochoso</div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <img src="assets/images/big-elevations.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Grande elevação</div>
-    </mat-grid-tile>
+    <div *ngFor="let info of trackInfo.characteristics">
+      <mat-grid-tile>
+        <img src="assets/images/{{info.icon}}"/>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="3">
+        <div class="label-column">{{info.title}}</div>
+      </mat-grid-tile>
+    </div>
+
   </mat-grid-list>
   <hr/>
   <span class="category-title">Indicações</span>
   <mat-grid-list class="path-info" cols="4" rowHeight="60px">
-    <mat-grid-tile>
-      <img src="assets/images/not-for-kids.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Não indicado para crianças</div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <img src="assets/images/right-shoes.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Calçado adequado</div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <img src="assets/images/bumped-path.png"/>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="3">
-      <div class="label-column">Caminho esbarrido</div>
-    </mat-grid-tile>
+    <div *ngFor="let info of trackInfo.indications">
+      <mat-grid-tile>
+        <img src="assets/images/{{info.icon}}.png"/>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="3">
+        <div class="label-column">{{info.title}}</div>
+      </mat-grid-tile>
+    </div>
   </mat-grid-list>
 </div>
 

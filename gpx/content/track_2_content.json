@@ -1,0 +1,25 @@
+{
+  "id": "track_2",
+  "title": "",
+  "image": "",
+  "description": "",
+  "warning": "",
+  "properties": {
+    "length": "",
+    "duration": "",
+    "type": "",
+    "dificulty": ""
+  },
+  "characteristics": [
+    {
+      "title": "",
+      "icon": ""
+    }
+  ],
+  "indications": [
+    {
+      "title": "",
+      "icon": ""
+    }
+  ]
+}

@@ -10,7 +10,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'path-info',
+    path: 'path-info/:trackId',
     component: ItemComponent,
     pathMatch: 'full',
   },
