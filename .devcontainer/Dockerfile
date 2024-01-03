@@ -1,7 +1,7 @@
 # Image metadata and config.
 # Ideally, the Node.js version should match what we use on CI.
 # See `executors > default-executor` in `.circleci/config.yml`.
-FROM node:20.10.0-alpine3.12
+FROM cimg/node:21.5.0
 
 
 LABEL name="Angular dev environment" \
