@@ -8,9 +8,7 @@
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers-contrib/features/angular-cli:2": {},
 		"ghcr.io/devcontainers-contrib/features/firebase-cli:2": {},
-		"ghcr.io/flexwie/devcontainer-features/op:1": {},
 		"ghcr.io/devcontainers-community/npm-features/typescript:1": {},
-		"ghcr.io/itsmechlark/features/1password:1": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -27,8 +25,4 @@
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-
-  "mounts": [
-    "source=${localEnv:HOME}/,target=/root"
-  ]
 }
