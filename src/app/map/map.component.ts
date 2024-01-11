@@ -8,7 +8,8 @@ import { MatDialog }                  from "@angular/material/dialog";
 import { FilterComponent }            from "./components/filter/filter.component";
 import { FilterService }              from "./services/filter.service";
 import { environment }                from "../../environments/environment";
-import { ActivatedRoute }             from "@angular/router"; // delete Leaflet.Icon.Default.prototype._getIconUrl;
+import { ActivatedRoute }             from "@angular/router";
+import {TrackService} from "../home/services/traks.service"; // delete Leaflet.Icon.Default.prototype._getIconUrl;
 
 // delete Leaflet.Icon.Default.prototype._getIconUrl;
 
@@ -32,6 +33,7 @@ export class MapComponent {
 
   constructor(protected gpxService: GpxService, public dialog: MatDialog,
               protected filterService: FilterService,
+              protected trackService: TrackService,
               private route: ActivatedRoute) {
 
     this.initializeComponent();
@@ -40,9 +42,7 @@ export class MapComponent {
   }
 
   openFilters(): void {
-    const dialogRef = this.dialog.open(FilterComponent, {
-      data: { tile: 'asdasdasd', description: 'asdasdasd' },
-    });
+    const dialogRef = this.dialog.open(FilterComponent );
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
@@ -90,13 +90,13 @@ export class MapComponent {
   }
 
   private showTrack(trackId: string) {
-    const gpx = this.gpxService.trackByName(trackId);
-
+    const trackData = this.trackService.trackInfo(trackId);
+    const gpxFile = `/assets/gpx/tracks/${trackData.gpx}`;
     if (this.currentTrack) {
       this.currentTrack.remove();
     }
 
-    this.currentTrack = new Leaflet.GPX(gpx, {
+    this.currentTrack = new Leaflet.GPX(gpxFile, {
       async: true,
       marker_options: {
         startIconUrl: 'assets/pin-icon-start.png',

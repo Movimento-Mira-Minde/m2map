@@ -1,14 +1,15 @@
 {
   "id": "track_6",
-  "title": "",
+  "title": "Escola secundaria, lagoas, lombeiro",
   "image": "",
+  "gpx": "mira_secundaria_lagoas_lombeiro_4_2_km.gpx",
   "description": "",
   "warning": "",
   "properties": {
-    "length": "",
+    "length": "4.2 km",
     "duration": "",
     "type": "",
-    "dificulty": ""
+    "difficulty": ""
   },
   "characteristics": [
     {

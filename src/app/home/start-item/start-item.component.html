@@ -3,7 +3,7 @@
   <img alt="Photo of a Shiba Inu" class="item-image" mat-card-image
        src="https://material.angular.io/assets/img/examples/shiba2.jpg">
   <mat-card-content>
-    <span class="difficulty-1">Fácil</span>
+    <span class="difficulty-1">{{trackInfo.properties.difficulty}}</span>
     <h1 class="item-title">{{trackInfo.title}}</h1>
     <span class="item-info">{{trackInfo.properties.length}} - {{trackInfo.properties.type}}
       - {{trackInfo.properties.duration}}</span>

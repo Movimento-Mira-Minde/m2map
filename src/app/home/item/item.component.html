@@ -31,13 +31,13 @@
       <div class="item">
         <img alt="Distância" src="assets/images/walk.png"/>
         <br/>
-        <span class="label">{{trackInfo.properties.dificulty}}</span>
+        <span class="label">{{trackInfo.properties.difficulty}}</span>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
 
 
-  <button class="button-right-icon very-wide start-go-path-button" mat-raised-button routerLink="/map/track_1">
+  <button class="button-right-icon very-wide start-go-path-button" mat-raised-button routerLink="/map/{{trackInfo.id}}">
     Comerçar percurso
 
     <mat-icon class="right-icon" color="dark-green">

@@ -18,7 +18,7 @@
 <wpt lat="39.541398" lon="-8.722214">
   <name>Nascentes_Olho</name>
   <desc>
-  &#x3C;p&#x3E;&#x3C;strong&#x3E;askjdhsk&#x3C;/strong&#x3E;dafjsd&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;p&#x3E;sdfsdfs&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;p&#x3E;&#x3C;img src=&#x22;https://gem.pt/wp-content/uploads/2021/01/49341932912_8dd3045b66_k.jpg&#x22; alt=&#x22;isto &#xE9; kayak!&#x22;&#x3E;&#x3C;br&#x3E;&#x3C;/p&#x3E;&#x3C;br&#x3E;&#x3C;p&#x3E;veja &#x3C;a href=&#x22;https://mira-minde.pt&#x22; title=&#x22;Site do Mira-Minde&#x22; target=&#x22;_blank&#x22;&#x3E;mais aqui!&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+  &lt;strong&gt;askjdhsk&lt;/strong&gt;dafjsd&lt;br&gt;sdfsdfs&lt;br&gt;&lt;img src=&quot;https://gem.pt/wp-content/uploads/2021/01/49341932912_8dd3045b66_k.jpg&quot; alt=&quot;isto é kayak!&quot;&gt;&lt;br&gt;&lt;br&gt;veja &lt;a href=&quot;https://mira-minde.pt&quot; title=&quot;Site do Mira-Minde&quot; target=&quot;_blank&quot;&gt;mais aqui!&lt;/a&gt;
   </desc>
 </wpt>
 <wpt lat="39.533758" lon="-8.699782"><name>Nascentes_Pena do Poio</name></wpt>

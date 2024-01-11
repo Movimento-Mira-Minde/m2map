@@ -17,7 +17,18 @@ function copyTraks() {
 function copyContent() {
   const sourceFolder = './gpx/content';
   const destinationFolder = 'src/assets/content';
-  copyFolderContents(sourceFolder, destinationFolder);
+  //copyFolderContents(sourceFolder, destinationFolder);
+  const fileContent = [];
+  fs.readdirSync(sourceFolder).forEach(file => {
+    const sourceFile = path.join(sourceFolder, file);
+    const content = fs.readFileSync(sourceFile);
+    fileContent.push(JSON.parse(content.toString()));
+  });
+  if (!fs.existsSync(destinationFolder)) {
+    fs.mkdirSync(destinationFolder);
+  }
+  const destinationFile = path.join(destinationFolder, 'tracks_info.json');
+  fs.writeFileSync(destinationFile, JSON.stringify(fileContent))
 }
 
 function copyFolderContents(sourceFolder, destinationFolder) {

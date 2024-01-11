@@ -13,7 +13,7 @@ export const environment = {
     //center: { lat: 28.626137, lng: 79.821603 },
   },
   filters: new Map<string, boolean>([
-    ['trees', false],
+    ['trees', true],
     ['lakes', true],
     ['springs', true],
     ['others', true]

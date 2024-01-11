@@ -1,14 +1,15 @@
 {
   "id": "track_5",
-  "title": "",
+  "title": "Pena do Poio, lagoa velha e lagoeiro",
   "image": "",
+  "gpx": "mira_pena_do_poio_lagoa_velha_lagoeiro_8_km.gpx",
   "description": "",
   "warning": "",
   "properties": {
-    "length": "",
+    "length": "8.0 km",
     "duration": "",
     "type": "",
-    "dificulty": ""
+    "difficulty": ""
   },
   "characteristics": [
     {

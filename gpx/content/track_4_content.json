@@ -1,14 +1,15 @@
 {
   "id": "track_4",
-  "title": "",
+  "title": "Bairro dos Bispos, Chão da aberta, lagoeiro e cisterna Grande",
   "image": "",
+  "gpx": "mira_bairro_dos_bispos_chao_daberta_lagoeiro_cisterna_grande_5_0_km.gpx",
   "description": "",
   "warning": "",
   "properties": {
-    "length": "",
+    "length": "5.0 km",
     "duration": "",
     "type": "",
-    "dificulty": ""
+    "difficulty": ""
   },
   "characteristics": [
     {

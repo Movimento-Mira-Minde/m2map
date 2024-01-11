@@ -1,14 +1,15 @@
 {
   "id": "track_2",
-  "title": "",
+  "title": "Lavadouro Agoeiro",
   "image": "",
+  "gpx": "minde_avadouro_agoeiro_costa_4_4_km.gpx",
   "description": "",
   "warning": "",
   "properties": {
-    "length": "",
+    "length": "4.4 km",
     "duration": "",
     "type": "",
-    "dificulty": ""
+    "difficulty": ""
   },
   "characteristics": [
     {

@@ -6,6 +6,7 @@ export interface TrackInfo {
   id: string,
   title: string,
   image: string,
+  gpx: string,
   description: string,
   warning: string,
   properties: TrackInfoProperties,

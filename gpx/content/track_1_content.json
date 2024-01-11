@@ -1,24 +1,25 @@
 {
   "id": "track_1",
-  "title": "",
-  "image": "",
-  "description": "",
-  "warning": "",
+  "title": "Fabrica Cisterna Grande",
+  "image": "minde_abrica_cisterna_grande_algueiroes_4_8_km.gpx",
+  "gpx": "",
+  "description": "é um caminho grande",
+  "warning": "Exemplo de de um aviso, tem que levar umas sandochas.",
   "properties": {
-    "length": "",
-    "duration": "",
-    "type": "",
-    "dificulty": ""
+    "length": "4.8 Km",
+    "duration": "1h28m",
+    "type": "Alagado",
+    "difficulty": "Difícil"
   },
   "characteristics": [
     {
-      "title": "",
+      "title": "isto é uma caracteristica tipica deste percurso",
       "icon": ""
     }
   ],
   "indications": [
     {
-      "title": "",
+      "title": "e estas são as indicações",
       "icon": ""
     }
   ]
